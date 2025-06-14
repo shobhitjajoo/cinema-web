@@ -10,9 +10,15 @@ collections:
     label: "About Section"
     files:
       - file: "index.html"
-        label: "About Content"
-        name: "about_content"
+        label: "About Us"
+        name: "about_us"
         fields:
-          - label: "About Text"
-            name: "body"
-            widget: "markdown"
+          - { label: "About Text", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Gallery Images"
+    folder: "images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
