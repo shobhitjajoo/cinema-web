@@ -6,19 +6,11 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "about"
-    label: "About Section"
+  - name: "content"
+    label: "Site Content"
     files:
-      - file: "index.html"
-        label: "About Us"
-        name: "about_us"
+      - label: "About Section"
+        name: "about"
+        file: "about.md"
         fields:
           - { label: "About Text", name: "body", widget: "markdown" }
-
-  - name: "gallery"
-    label: "Gallery Images"
-    folder: "images"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
